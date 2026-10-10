@@ -6,17 +6,11 @@ class Solution {
         for(int x : nums){
             if(!set.contains(x)){
                 set.add(x);
-                count++;
+            }
+            else{
+                return true;
             }
         }
-
-        int n = nums.length;
-
-        if(count == n){
-            return false;
-        }
-        else{
-            return true;
-        }
+        return false;
     }
 }
